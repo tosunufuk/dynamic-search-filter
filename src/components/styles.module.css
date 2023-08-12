@@ -1,0 +1,13 @@
+/* styles.module.css */
+
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.maxWidthCard {
+  max-width: 15rem;
+  width: 100%;
+}

@@ -11,3 +11,15 @@
   max-width: 15rem;
   width: 100%;
 }
+
+.chipsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add 10px gap between chips */
+  margin-bottom: 10px; /* Add margin to separate from the DynamicComponent */
+}
+
+/* Add space between Autocomplete and chips */
+.autocompleteContainer {
+  margin-top: 10px;
+}

@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Dynamic Filter for Searching
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an example of a dynamic filter for searching within an application. The filter allows users to select different options and refine their search criteria. The filter components are built using React and Material-UI.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Select options from a dynamic Autocomplete component.
+- Update the options of the Autocomplete based on user selections.
+- Display selected values as clickable and deletable chips.
+- Refine search criteria based on selections.
+- Responsively center the filter components.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/tosunufuk/dynamic-search-filter.git
+   cd dynamic-search-filter
 
-### `npm test`
+   1.Install dependencies:
+   npm install
+   2.Run the application:
+   npm start
+   3.Open your browser and navigate to http://localhost:3000 to see the dynamic filter in action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   Components
+   ParentComponent
+   The ParentComponent serves as the main container for the dynamic filter. It displays the selected values as chips and renders the DynamicComponent for selecting options. It also manages the state of selected values and options.
 
-### `npm run build`
+   DynamicComponent
+   The DynamicComponent is responsible for rendering the Autocomplete component. It receives options from the ParentComponent and triggers the onSelect callback when an option is selected. It also clears the selected value when options change, preventing an empty selection from being added.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   Customization
+   Modify the optionsMap in the ParentComponent to define specific options for each selection.
+   Customize the CSS styles in the styles.module.css to adjust the appearance of the components.
+   License
+   This project is licensed under the MIT License.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```

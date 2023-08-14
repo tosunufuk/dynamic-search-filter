@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import DynamicCard from "./components/DynamicCard";
+import ParentComponent from "./components/ParentComponent";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <DynamicCard />
+      <ParentComponent />
     </div>
   );
 }

@@ -18,11 +18,11 @@ This is an example of a dynamic filter for searching within an application. The 
    git clone https://github.com/tosunufuk/dynamic-search-filter.git
    cd dynamic-search-filter
 
-1.Install dependencies:
+2.Install dependencies:
    npm install
-2.Run the application:
+3.Run the application:
    npm start
-3.Open your browser and navigate to http://localhost:3000 to see the dynamic filter in action.
+4.Open your browser and navigate to http://localhost:3000 to see the dynamic filter in action.
 
    
 

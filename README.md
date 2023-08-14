@@ -38,5 +38,3 @@ This is an example of a dynamic filter for searching within an application. The 
    Customize the CSS styles in the styles.module.css to adjust the appearance of the components.
    License
    This project is licensed under the MIT License.
-
-   ```

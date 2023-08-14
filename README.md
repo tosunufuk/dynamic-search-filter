@@ -16,7 +16,7 @@ This is an example of a dynamic filter for searching within an application. The 
 
    ```bash
    git clone https://github.com/tosunufuk/dynamic-search-filter.git
-   cd dynamic-search-filter```
+   cd dynamic-search-filter
 
 1.Install dependencies:
    npm install

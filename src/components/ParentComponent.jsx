@@ -7,6 +7,7 @@ const ParentComponent = () => {
   const environment = ["space", "air", "surface", "subsurface", "land"];
   const [selectedValues, setSelectedValues] = useState([]);
   const [currentOptions, setCurrentOptions] = useState(environment);
+  const [isAutoselectVisible, setAutoselectVisible] = useState(true);
 
   const optionsMap = {
     space: ["type", "dimensions", "materials", "countries"],
@@ -69,21 +70,21 @@ const ParentComponent = () => {
       setSelectedValues((prevValues) => [...prevValues, value]);
       if (optionsMap[value]) {
         setCurrentOptions(optionsMap[value]);
+        setAutoselectVisible(true);
+      } else if (selectedValues.length > 0 && !optionsMap[value]) {
+        console.log("here I am!");
+        setAutoselectVisible(false);
       } else {
         setCurrentOptions(environment);
+        setAutoselectVisible(true);
       }
     }
   };
 
   const handleChipDelete = (chipToDelete) => {
-    setSelectedValues((prevValues) =>
-      prevValues.filter((chip) => chip !== chipToDelete)
-    );
-
-    if (environment.includes(chipToDelete)) {
-      setCurrentOptions(environment);
-      setSelectedValues([]);
-    }
+    setSelectedValues([]);
+    setCurrentOptions(environment);
+    setAutoselectVisible(true);
   };
 
   return (
@@ -104,6 +105,7 @@ const ParentComponent = () => {
           <DynamicComponent
             options={currentOptions}
             onSelect={handleDynamicSelect}
+            isAutoselectVisible={isAutoselectVisible}
           />
         </CardContent>
       </Card>

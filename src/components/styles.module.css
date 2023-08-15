@@ -23,3 +23,9 @@
 .autocompleteContainer {
   margin-top: 10px;
 }
+
+.textfieldWithButton {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* This adds spacing between elements */
+}
